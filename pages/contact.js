@@ -1,13 +1,13 @@
 import Link from 'next/link';
 
 
-export default function AboutUs() {
+export default function Contact() {
   return (
     <>
-      <h1>About Us</h1>
+      <h1>Contact Me</h1>
       <h2>
         <Link href="/">Back to home</Link>
       </h2>
     </>
   );
-}                                                             
+}

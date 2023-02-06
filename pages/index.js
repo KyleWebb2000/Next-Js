@@ -4,27 +4,30 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Kyle's Blog</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <body className={styles.body}>
+      <div className={styles.container}>
+        <Head>
+          <title>Kyle's Blog</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <main>
-        <h1 className={styles.title}>
-         Welcome To <a>My Blog</a>
-        </h1>
+        <main>
+          <div  className={styles.headerContainer}>
 
-        <div>
-          <h1 className="title">
-            <Link href="/posts/first-post">My Post</Link>
-          </h1>
-          <h1 className="title">
-            <Link href="/about">About Me</Link>
-          </h1>
-        </div>
-      </main>
+            <div  className={styles.headerTitle}>
+              <h1>Welcome To My Next.js Website</h1>
+            </div>
 
-    </div>
+            <div  className={styles.headerNav}>
+              <p className={styles.navLinks}><Link className={styles.textLink} href="/posts/first-post">My Post</Link></p>
+              <p className={styles.navLinks}><Link className={styles.textLink}  href="/about">About Me</Link></p>
+              <p className={styles.navLinks}><Link className={styles.textLink}  href="/contact">Contact</Link></p>
+            </div>
+
+          </div>
+        </main>
+    
+      </div>
+    </body>
   )
 }
