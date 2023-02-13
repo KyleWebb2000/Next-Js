@@ -1,10 +1,9 @@
 import Link from 'next/link';
-import HeaderComponent from "../pages/header";
+import HeaderComponent from "./header";
 import styles from '../styles/Header.module.css';
 import sectionStyles from '../styles/Section.module.css';
 
-
-export default function Contact() {
+export default function FirstPost() {
   return (
     <>
       <body className={styles.body}>
@@ -13,7 +12,7 @@ export default function Contact() {
           
           <div className={sectionStyles.sectionContainer}>
             <div className={sectionStyles.section}>
-              <h1>Contact Me</h1>
+              <h1>First Post</h1>
               <h2>
                 <Link href="/">Back to home</Link>
               </h2>
@@ -26,7 +25,6 @@ export default function Contact() {
 
         </main>
       </body>
-
     </>
   );
 }
