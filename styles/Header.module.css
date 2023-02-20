@@ -95,3 +95,9 @@
     );
   }
 }
+.photoStyles{
+  border-radius: 50%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
